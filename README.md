@@ -28,7 +28,7 @@ The dataset contains 1,503 experimental observations.
 
 Input features:
 
-    f: Frequency in Hertzs [Hz].
+    f: Frequency in Hertz [Hz].
     alpha: Angle of attack (AoA, α), in degrees [°].
     c: Chord length, in meters [m].
     U_infinity: Free-stream velocity, in meters per second [m/s].
@@ -62,7 +62,7 @@ EDA also suggested interactions between:
 
 ## Experimental Setup
 
-a 70 30 train test split was used along with a random state of 1000.
+A 70:30 train-test split was used, with a random state of 1000.
 
 Min-Max scaling was used consistently throughout the project.
 
@@ -101,7 +101,7 @@ residual patterns remained.
 
 ### 3. XGBoost Regression
 
-XGBoost was used to capture nonlinear relationships between targets and features.
+XGBoost captured nonlinear relationships between targets and features.
 
 Hyperparameters were optimized using Bayesian optimization with
 five-fold cross-validation on the training set.
@@ -112,7 +112,7 @@ XGBoost produced the strongest point-prediction performance.
 
 Gaussian Process Regression was used as a probabilistic nonlinear model.
 
-An RBF-based kernel was used to model nonlinear relationships while
+An RBF-based kernel was used to model nonlinear relationships
 predictive standard deviations were used to quantify uncertainty.
 
 In addition to conventional regression metrics, uncertainty was assessed
