@@ -135,3 +135,7 @@ NASA / UCI Airfoil Self-Noise Dataset
 Sabri, K., Ferroudji, H. & Gaceb, M. (2026).
 Data-Driven Prediction and Metaheuristic Optimization of Airfoil
 Self-Noise Using Machine Learning Algorithms.
+
+## Setup
+
+pip install -r requirements.txt
